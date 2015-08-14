@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/taskorderingview">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Task Ordering"
+        android:id="@+id/textView14"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order1"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order2"
+        android:gravity="center"
+        android:layout_below="@+id/order1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order3"
+        android:gravity="center"
+        android:layout_below="@+id/order2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order4"
+        android:gravity="center"
+        android:layout_below="@+id/order3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order5"
+        android:gravity="center"
+        android:layout_below="@+id/order4"
+        android:layout_toLeftOf="@+id/task1"
+        android:layout_toStartOf="@+id/task1" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order6"
+        android:gravity="center"
+        android:layout_below="@+id/order5"
+        android:layout_toLeftOf="@+id/task1"
+        android:layout_toStartOf="@+id/task1" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order7"
+        android:gravity="center"
+        android:layout_below="@+id/order6"
+        android:layout_toLeftOf="@+id/task1"
+        android:layout_toStartOf="@+id/task1" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order8"
+        android:gravity="center"
+        android:layout_below="@+id/order7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task1"
+        android:layout_alignTop="@+id/order1"
+        android:layout_toRightOf="@+id/order1"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task2"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/order2"
+        android:layout_alignLeft="@+id/task1"
+        android:layout_alignStart="@+id/task1"
+        android:layout_alignRight="@+id/task1"
+        android:layout_alignEnd="@+id/task1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task3"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/order3"
+        android:layout_alignLeft="@+id/task2"
+        android:layout_alignStart="@+id/task2"
+        android:layout_alignRight="@+id/task2"
+        android:layout_alignEnd="@+id/task2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task4"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/order4"
+        android:layout_alignLeft="@+id/task3"
+        android:layout_alignStart="@+id/task3"
+        android:layout_alignRight="@+id/task3"
+        android:layout_alignEnd="@+id/task3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task5"
+        android:textSize="16dp"
+        android:layout_above="@+id/order6"
+        android:layout_alignLeft="@+id/task4"
+        android:layout_alignStart="@+id/task4"
+        android:layout_alignRight="@+id/task4"
+        android:layout_alignEnd="@+id/task4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task6"
+        android:textSize="16dp"
+        android:layout_above="@+id/order7"
+        android:layout_alignLeft="@+id/task5"
+        android:layout_alignStart="@+id/task5"
+        android:layout_alignRight="@+id/task5"
+        android:layout_alignEnd="@+id/task5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task7"
+        android:textSize="16dp"
+        android:layout_above="@+id/order8"
+        android:layout_alignLeft="@+id/task6"
+        android:layout_alignStart="@+id/task6"
+        android:layout_alignRight="@+id/task6"
+        android:layout_alignEnd="@+id/task6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task8"
+        android:textSize="16dp"
+        android:layout_alignTop="@+id/order8"
+        android:layout_alignLeft="@+id/task7"
+        android:layout_alignStart="@+id/task7"
+        android:layout_alignRight="@+id/task7"
+        android:layout_alignEnd="@+id/task7" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/order9"
+        android:gravity="center"
+        android:layout_below="@+id/order8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/task9"
+        android:textSize="16dp"
+        android:layout_alignBottom="@+id/order9"
+        android:layout_alignLeft="@+id/task8"
+        android:layout_alignStart="@+id/task8"
+        android:layout_alignRight="@+id/task8"
+        android:layout_alignEnd="@+id/task8" />
+
+</RelativeLayout>

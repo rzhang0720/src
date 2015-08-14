@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/circledimensions">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Object Properties"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Radius"
+        android:id="@+id/textView8"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/purple_button"
+        android:layout_alignRight="@+id/purple_button"
+        android:layout_alignEnd="@+id/purple_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height"
+        android:id="@+id/circleheight"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/objectradiusinput"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/objectheightinput"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/circleheight"
+        android:layout_alignRight="@+id/textView7"
+        android:layout_alignEnd="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="m"
+        android:id="@+id/textView11"
+        android:layout_alignBottom="@+id/objectradiusinput"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="m"
+        android:id="@+id/textView12"
+        android:layout_alignBottom="@+id/objectheightinput"
+        android:layout_toRightOf="@+id/textView7"
+        android:layout_toEndOf="@+id/textView7" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table"
+            android:id="@+id/tablebutton"
+            android:checked="false"
+            android:layout_marginTop="25dp"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+            android:id="@+id/blockbutton"
+            android:checked="false"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moveable"
+        android:id="@+id/moveable"
+        android:checked="false"
+        android:visibility="invisible"
+        android:layout_below="@+id/radiogroup"
+        android:layout_alignLeft="@+id/radiogroup"
+        android:layout_alignStart="@+id/radiogroup" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/purple_button"
+        android:background="#ffdf3dff"
+        android:layout_below="@+id/moveable"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/green_button"
+        android:background="#ff1eff14"
+        android:layout_below="@+id/moveable"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blue_button"
+        android:background="#ff000dff"
+        android:layout_below="@+id/moveable"
+        android:layout_alignRight="@+id/objectradiusinput"
+        android:layout_alignEnd="@+id/objectradiusinput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You must indicate what type of object this is."
+        android:id="@+id/required_object_type"
+        android:textColor="#ffff0606"
+        android:visibility="invisible"
+        android:layout_above="@+id/moveable"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:layout_toLeftOf="@+id/radiogroup"
+        android:layout_toStartOf="@+id/radiogroup"
+        android:paddingLeft="25dp" />
+
+</RelativeLayout>

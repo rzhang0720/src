@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Object Properties"
+        android:id="@+id/textView7"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Horizontal Axis"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/purple_button"
+        android:layout_toLeftOf="@+id/green_button"
+        android:layout_toStartOf="@+id/green_button"
+        android:layout_marginTop="23dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vertical Axis"
+        android:id="@+id/circleheight"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/textView8"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height"
+        android:id="@+id/textView10"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/circleheight"
+        android:layout_alignLeft="@+id/circleheight"
+        android:layout_alignStart="@+id/circleheight"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/objectlengthinput"
+        android:gravity="center"
+        android:layout_above="@+id/circleheight"
+        android:layout_alignLeft="@+id/blue_button"
+        android:layout_alignStart="@+id/blue_button" />
+
+    <EditText
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/objectwidthinput"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/circleheight"
+        android:layout_toLeftOf="@+id/textView11"
+        android:layout_toStartOf="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="m"
+        android:id="@+id/textView11"
+        android:layout_alignBottom="@+id/textView8"
+        android:layout_toRightOf="@+id/objectlengthinput"
+        android:layout_toEndOf="@+id/objectlengthinput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="m"
+        android:id="@+id/textView12"
+        android:layout_alignTop="@+id/circleheight"
+        android:layout_alignLeft="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="m"
+        android:id="@+id/textView13"
+        android:layout_alignBottom="@+id/objectheightinput"
+        android:layout_toRightOf="@+id/objectlengthinput"
+        android:layout_toEndOf="@+id/objectlengthinput" />
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Table"
+            android:id="@+id/tablebutton"
+            android:checked="false"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block"
+            android:id="@+id/blockbutton"
+            android:checked="false"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Moveable"
+        android:id="@+id/moveable"
+        android:checked="false"
+        android:visibility="invisible"
+        android:layout_below="@+id/radiogroup"
+        android:layout_alignLeft="@+id/radiogroup"
+        android:layout_alignStart="@+id/radiogroup" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/purple_button"
+        android:background="#ffdf3dff"
+        android:layout_below="@+id/moveable"
+        android:layout_alignLeft="@+id/textView7"
+        android:layout_alignStart="@+id/textView7" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/green_button"
+        android:background="#ff1eff14"
+        android:layout_alignTop="@+id/purple_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blue_button"
+        android:background="#ff000dff"
+        android:layout_alignTop="@+id/green_button"
+        android:layout_toRightOf="@+id/moveable"
+        android:layout_toEndOf="@+id/moveable" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/objectheightinput"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignLeft="@+id/objectwidthinput"
+        android:layout_alignStart="@+id/objectwidthinput"
+        android:gravity="center"
+        android:layout_alignRight="@+id/objectwidthinput"
+        android:layout_alignEnd="@+id/objectwidthinput" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You must indicate what type of object this is."
+        android:id="@+id/required_object_type"
+        android:textColor="#ffff0606"
+        android:visibility="invisible"
+        android:layout_above="@+id/moveable"
+        android:layout_alignRight="@+id/circleheight"
+        android:layout_alignEnd="@+id/circleheight"
+        android:layout_marginBottom="19dp"
+        android:paddingLeft="25dp" />
+
+</RelativeLayout>

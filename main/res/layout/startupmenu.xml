@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/startupmenu"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/grid_layout"
+        android:id="@+id/gridlayout"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Rows"
+        android:id="@+id/rows"
+        android:paddingTop="0dp"
+        android:layout_marginTop="38dp"
+        android:textSize="20dp"
+        android:textColor="#ff000000"
+        android:layout_below="@+id/gridlayout"
+        android:layout_toLeftOf="@+id/rowinput"
+        android:layout_toStartOf="@+id/rowinput"
+        android:layout_marginRight="73dp"
+        android:layout_marginEnd="73dp" />
+
+    <EditText
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/rowinput"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_alignBottom="@+id/rows"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Columns"
+        android:id="@+id/textView"
+        android:layout_marginTop="55dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/rowinput"
+        android:layout_alignLeft="@+id/rows"
+        android:layout_alignStart="@+id/rows" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/columninput"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignRight="@+id/rowinput"
+        android:layout_alignEnd="@+id/rowinput"
+        android:layout_alignLeft="@+id/rowinput"
+        android:layout_alignStart="@+id/rowinput"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Room Layout"
+        android:id="@+id/textView2"
+        android:layout_marginTop="44dp"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Width"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="36dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/roomwidthinput"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/columninput"
+        android:layout_alignStart="@+id/columninput"
+        android:layout_alignRight="@+id/columninput"
+        android:layout_alignEnd="@+id/columninput"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Height"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="46dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/roomheightinput"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/roomwidthinput"
+        android:layout_alignStart="@+id/roomwidthinput"
+        android:layout_alignRight="@+id/roomwidthinput"
+        android:layout_alignEnd="@+id/roomwidthinput"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/meter_text"
+        android:id="@+id/textView5"
+        android:layout_alignTop="@+id/roomwidthinput"
+        android:layout_toRightOf="@+id/roomwidthinput"
+        android:layout_toEndOf="@+id/roomwidthinput"
+        android:layout_above="@+id/textView4"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/meter_text"
+        android:id="@+id/textView6"
+        android:layout_alignBottom="@+id/roomheightinput"
+        android:layout_toRightOf="@+id/roomheightinput"
+        android:layout_toEndOf="@+id/roomheightinput"
+        android:layout_alignTop="@+id/textView4"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are required to fill this out."
+        android:id="@+id/required_grid_row"
+        android:layout_below="@+id/rowinput"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:textColor="#ffff0606"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are required to fill this out."
+        android:id="@+id/required_grid_column"
+        android:layout_below="@+id/columninput"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:textColor="#ffff0606"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are required to fill this out."
+        android:id="@+id/required_room_width"
+        android:layout_below="@+id/roomwidthinput"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5"
+        android:textColor="#ffff0606"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are required to fill this out."
+        android:id="@+id/required_room_height"
+        android:layout_below="@+id/roomheightinput"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6"
+        android:textColor="#ffff0606"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
